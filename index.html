@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Binário Para Decimal</title>
+  </head>
+  <body>
+    <header class="secao_topo">
+      <div><h1>Conversor</h1></div>
+    </header>
+
+    <main class="container_principal">
+      <section class="secao_calculo separa_secao">
+        <h2>Binário para Decimal</h2>
+
+        <div class="secao_conversor">
+          <label for="binario" class="titulo_label">Digite o Binário:</label>
+          <input
+            id="binario"
+            class="input_dados"
+            type="text"
+            placeholder="ex: 010111"
+            autocomplete="off"
+          />
+        </div>
+
+        <div class="secao_conversor">
+          <label for="decimal" class="titulo_label"> Valor em Decimal:</label>
+          <input id="decimal" type="text" class="input_dados" readonly />
+        </div>
+
+        <button class="enviar">Converter</button>
+      </section>
+
+      <section class="secao_explicacao separa_secao">
+        <h2>Como funciona?</h2>
+
+        <ul class="lista_passos">
+          <li><p>Separe cada dígito do numero binario</p></li>
+
+          <li>
+            <p>
+              Utilize a Formula:
+              <span class="formula">n x b<sup>i</sup></span> em cada dígito
+              iniciando da direta para a esquerda
+            </p>
+          </li>
+          <li>
+            <p>
+              n = digito, b = base do binario(base 2), i = a posição do dígito
+            </p>
+          </li>
+        </ul>
+
+        <div class="explicacao">
+          <p class="valor_pego">Vamos pegar o seguinte valor como exemplo:</p>
+          <p class="binario_digitado centro">1 0 1 1 1</p>
+          <p>
+            Aplicando a fórmula em cada dígito da direita para a esquerda temos:
+          </p>
+          <p class="explicacao_calculo centro">
+            (1x2<sup>4</sup>) + (0x2<sup>3</sup>) + (1x2<sup>2</sup>) +
+            (1x2<sup>1</sup>) + (1x2<sup>0</sup>)
+          </p>
+          <p class="soma_explicacao centro">16 + 0 + 4 + 2 + 1</p>
+          <p>
+            Com os cálculos obtemos o valor:
+            <span class="resultado_explicacao"> 23 </span>
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <script src="/js/script.js"></script>
+  </body>
+</html>

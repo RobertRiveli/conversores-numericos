@@ -1,0 +1,145 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Math&display=swap");
+
+:root {
+  --tamanho-segundo-titulo: 3rem;
+  --tamanho-texto: 1.6rem;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Courier New", Courier, monospace;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: rgb(63, 60, 60);
+}
+
+.titulo_label {
+  font-size: var(--tamanho-texto);
+  font-weight: 700;
+}
+
+p {
+  font-size: var(--tamanho-texto);
+}
+
+.separa_secao {
+  margin: 4rem auto;
+}
+
+.secao_topo {
+  color: #d7cfcf;
+  text-align: center;
+  padding: 0.5rem 1rem;
+  background-color: rgb(56, 54, 54);
+}
+
+.secao_topo h1 {
+  font-size: 3.2rem;
+}
+
+.container_principal {
+  padding: 2rem 1rem;
+}
+
+.secao_calculo h2 {
+  font-size: var(--tamanho-segundo-titulo);
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.secao_calculo {
+  max-width: 60rem;
+  height: 35rem;
+
+  padding: 2rem 2rem;
+  background-color: rgb(156, 154, 154);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+
+  border-radius: 2px;
+  box-shadow: 1px 1px 4px 5px rgb(197, 195, 195) inset;
+}
+
+.input_dados {
+  margin-top: 0.5rem;
+  width: 100%;
+  height: 3.5rem;
+
+  border-radius: 0.5px;
+  border: 1px solid rgb(164, 162, 162);
+
+  padding: 0px 5px;
+}
+
+.input_dados:focus {
+  box-shadow: 1px 1px 10px 1px rgb(155, 151, 151);
+}
+
+.secao_conversor {
+  width: 100%;
+}
+
+.enviar {
+  width: 9rem;
+  height: 2.5rem;
+  border-radius: 4px;
+  border: 2px solid;
+}
+
+.enviar:hover {
+  background-color: rgb(170, 165, 165);
+  color: white;
+}
+
+.enviar:active {
+  color: black;
+}
+
+.secao_explicacao {
+  color: white;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.secao_explicacao h2 {
+  font-size: var(--tamanho-segundo-titulo);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.formula {
+  font-family: "Noto Sans Math", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lista_passos,
+.explicacao {
+  max-width: 60rem;
+}
+
+.lista_passos li {
+  padding: 1rem 0rem;
+}
+
+.explicacao p {
+  padding: 1rem 0rem;
+}
+
+.centro {
+  text-align: center;
+}
