@@ -36,12 +36,17 @@ p {
 .secao_topo {
   color: #d7cfcf;
   text-align: center;
-  padding: 0.5rem 1rem;
+  padding: 1rem 1rem;
   background-color: rgb(56, 54, 54);
 }
 
 .secao_topo h1 {
   font-size: 3.2rem;
+}
+
+.secao_topo a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .container_principal {
